@@ -1,0 +1,163 @@
+/* Edição do fundo e animação do fundo */
+body {
+    height: 100vh;
+    background: linear-gradient(140deg, #3f3b4f, #2f2c41, #201e32,#100f24, #000015);
+    background-size: 300% 100%;
+    animation: moveGradient 5s linear  alternate infinite;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Botão de retornar */
+#voltar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 44px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+#voltar:hover {
+    border: solid 0.1px rgba(130, 5, 155, 0.507);
+    color: rgba(130, 5, 155, 0.507);
+    transform: scale(1.1);
+}
+
+/* Caixa de login */
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* Todas informações dentro da caixa de login */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(140deg, #3f3b4f, #2f2c41, #201e32,#100f24, #000015);
+    background-size: 300% 100%;
+    animation: moveGradient1 5s linear  alternate infinite;
+    box-shadow: 0px 2px 10px 3px  rgba(56, 1, 56, 0.534);
+    padding: 40px;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+@keyframes moveGradient1 {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Textos em cima dos inputs */
+p {
+    color: white;
+    padding-left: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Edição dos inputs */
+input {
+    width: 40vh;
+    height: 5vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 15px;
+    padding-left: 7px;
+}
+
+input::placeholder {
+    color: white;
+    padding: 4px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Caixa da alteração de senha e login */
+.confirm {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Caixa da alteração de senha */
+.senha {
+    display: flex;
+    gap: 5px;
+}
+
+/* Edição do botão de redefinir senha */
+.redenfin {
+    all: unset; /* Remove todos os estilos padrão do botão */
+    cursor: pointer;
+    color: rgb(118, 75, 168);
+    text-decoration:underline;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.redenfin:hover{
+    transform: scale(0.98);
+    color: rgb(33, 1, 175);
+}
+
+/* Caixa de logins */
+.logins {
+    display: flex;
+    gap: 10px;
+}
+
+/* Edição do botão de login */
+.logar {
+    background: linear-gradient(140deg, #3f3b4f, #2f2c41, #201e32,#100f24, #000015);
+    background-size: 300% 100%;
+    animation: moveGradient 5s linear  alternate infinite;
+    color: white;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 20px;
+    border: none;
+    margin-top:  10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8); /* Brilho suave */
+    transition: 0.7s;
+}
+
+.logar:hover {
+    box-shadow: 0px 0px 2px 2px white;
+    transform: scale(0.97);
+}
+
+/* Edição do redirecionamento pro visitante */
+.link-visit {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    opacity: 0.534;
+    font-size: 20px;
+    color: white;
+    transition: 0.7s;
+}
+
+.link-visit:hover {
+    transform: scale(0.97);
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
