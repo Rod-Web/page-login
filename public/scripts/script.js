@@ -1,4 +1,4 @@
-import { logins } from '../../data/bd.js'; 
+import { logins } from '/data/bd.js'; 
 let paginTrue = "http://127.0.0.1:5500/public/page/Visual.html";
 
 let logar = document.querySelector(".logar");
