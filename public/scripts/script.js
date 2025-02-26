@@ -1,5 +1,5 @@
 import { logins } from './bd.js'; 
-let paginTrue = "http://127.0.0.1:5500/public/page/Visual.html";
+let paginTrue = "https://page-login-bice.vercel.app/public/page/Visual.html";
 
 let logar = document.querySelector(".logar");
 
